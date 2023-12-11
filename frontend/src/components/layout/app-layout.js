@@ -93,7 +93,7 @@ export const AppLayout = () => {
                                 <>
                                     <Tooltip title="Open settings">
                                         <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                                            <Avatar> {user.username.charAt(0).toUpperCase()} </Avatar>
+                                        <Avatar alt={user.username} src={user.dp} />
                                         </IconButton>
                                     </Tooltip>
                                     <Menu
